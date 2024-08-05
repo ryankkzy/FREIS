@@ -1,11 +1,25 @@
-import './index.css';
+import './index.scss';
+import { Link } from 'react-router-dom'
 
 export default function Inicio() {
   return (
-    <div className="cabecalho">
-        <div>
-          <img src="public/assets/images/image 1" alt="aaaa" />
+    <div className='pagina-inicio pagina'>
+      <header>
+        <div className='containerAzul'>
+          <div className='imagemTitulo'>
+            <div>
+              <img className='image' src="/assets/images/image 1.png" alt="" />
+            </div>
+            <div>
+              <h1>React FreiS</h1>
+            </div>
+          </div>
+          <div className='container2'>
+            <Link to='/'>Inicio</Link>
+            <Link to='/pages/sobre'>Sobre</Link>
+          </div>
         </div>
+      </header>
     </div>
   );
 }

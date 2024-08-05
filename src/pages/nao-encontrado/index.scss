@@ -1,0 +1,15 @@
+.pagina-nao-encontrada {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    .titulo {
+        text-align: center;
+    }
+
+    .icone {
+        min-width: 700px;
+        margin-top: 10px;
+    }
+}
