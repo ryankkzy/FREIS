@@ -2,6 +2,8 @@ import './index.scss';
 import { Link } from 'react-router-dom'
 
 export default function Inicio() {
+
+
   return (
     <div className='pagina-inicio pagina'>
       <header>
@@ -20,6 +22,17 @@ export default function Inicio() {
           </div>
         </div>
       </header>
+      <h1>Escolha um treino...</h1>
+      <div className='cardL'>
+          <Link to='/pages/exercicio01' className='link'>
+              <div className='card'>
+                <div className='retangulo laranja'/>
+                   <h3 className='titulo'>Cupom de desconto</h3>
+                   <h4 className='subtitulo'>Exercício 1</h4>
+              </div>
+            </Link>
+        </div>
+
     </div>
   );
 }

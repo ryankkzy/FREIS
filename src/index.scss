@@ -6,8 +6,13 @@
   font-family: "Poppins";
 }
 
+
 .pagina {
 
+
+
+  background-color: #F5F6FA;
+  min-height: 1000px;
 
   .containerAzul {
     background-color: #6278F7;
@@ -15,7 +20,7 @@
     flex-direction: row;
     justify-content: space-between;
     height: 120px;
-    color: white;
+    color: #ffffff;
   }
 
   .container2 {
@@ -24,8 +29,9 @@
     gap: 20px;
     margin: 40px 50px 10px 20px;
     text-align: center;
-    color: white;
-    
+    color: #ffffff;
+    text-decoration: none;
+    color: #ffffff; 
   }
 
   .imagemTitulo {
@@ -34,11 +40,12 @@
 
   .image{
     height: 80px;
-    margin: 20px 40px 20px 100px;
+    margin: 20px -30px 20px 100px;
   }
 
   h1 {
     font: 550 20px 'Poppins';
     margin-top: 45px;
+    margin-left: 100px;
   }
 }
