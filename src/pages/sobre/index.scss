@@ -1,13 +1,15 @@
 .pagina-sobre {
-
+    
     h2 {
         margin: 50px 0px 40px 70px;
+        color: black;
     }
 
     p {
         text-align: center;
         font-size: 37px;
-        line-height: 42px
+        line-height: 42px;
+        color: black;
     }
 
     .final {
@@ -16,5 +18,5 @@
         justify-content: center;
         align-items: center;
     }
-
+    
 }
