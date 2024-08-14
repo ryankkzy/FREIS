@@ -32,7 +32,7 @@ export default function Exerci1() {
         </div>
       </header>
       <div className='informacao'>
-        <img src="/assets/images/voltar.png" alt="" />
+          <Link to='/'><img src="/assets/images/voltar.png" alt="" /></Link>
         <h2>Exercicio 01 - Cupom de desconto</h2>
       </div>
       <div className='faixa' />

@@ -10,6 +10,10 @@
         color: black;
     }
 
+    .containerPrincipal {
+        display: flex;
+    }
+
     .cardL {
         margin-top: 36px;
         margin-left: 100px;
@@ -41,7 +45,7 @@
             }
 
             .titulo {
-                font-size: 16px;
+                font-size: 13px;
                 font-weight: bold;
                 margin-top: 10px;
                 color: #383131;
@@ -57,4 +61,97 @@
         }
     }
 
+    .cardV {
+        margin-top: 36px;
+        margin-left: 50px;
+
+        .link {
+            text-decoration: none;
+        }
+
+        .card {
+            width: 215px;
+            height: 160px;
+            border-radius: 12px;
+
+            text-align: center;
+            align-content: center;
+            background-color: #ffffff;
+            text-decoration: none;
+
+            .retangulo {
+                margin-left: 50%;
+                transform: translateX(-50%);
+                height: 60px;
+                width: 60px;
+                border-radius: 12px;
+            }
+
+            .verde {
+                background-color: #B3FF37;
+            }
+
+            .titulo {
+                font-size: 13px;
+                font-weight: bold;
+                margin-top: 10px;
+                color: #383131;
+            }
+
+            .subtitulo {
+                font-size: 16px;
+                font-weight: lighter;
+                margin-top: 10px;
+                color: #000000;
+                font: 500 12px "Poppins";
+            }
+        }
+    }
+
+    .cardCiano {
+        margin-top: 36px;
+        margin-left: 50px;
+
+        .link {
+            text-decoration: none;
+        }
+
+        .card {
+            width: 215px;
+            height: 160px;
+            border-radius: 12px;
+
+            text-align: center;
+            align-content: center;
+            background-color: #ffffff;
+            text-decoration: none;
+
+            .retangulo {
+                margin-left: 50%;
+                transform: translateX(-50%);
+                height: 60px;
+                width: 60px;
+                border-radius: 12px;
+            }
+
+            .ciano {
+                background-color:#37FFF3;
+            }
+
+            .titulo {
+                font-size: 13px;
+                font-weight: bold;
+                margin-top: 10px;
+                color: #383131;
+            }
+
+            .subtitulo {
+                font-size: 16px;
+                font-weight: lighter;
+                margin-top: 10px;
+                color: #000000;
+                font: 500 12px "Poppins";
+            }
+        }
+    }
 }
