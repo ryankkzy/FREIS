@@ -44,24 +44,24 @@ export default function Exerci3() {
             <div className='caixa-problema'>
                 <p>Implementar um programa em Javascript para calcular o total de uma venda de açaí a partir das quantidades compradas para cada tamanho: pequeno, médio e grande, <br />sabendo que o valor do açaí é R$ 13,50; R$ 15,00 e R$ 17,50 respectivamente</p>
             </div>
-            <div className='containerSub'>
-                <div className='campos'>
+            <div className='containerConta'>
+                <div className='campo'>
                     <div className='problema'>
                         <label>Quantidade pequeno</label>
                         <input placeholder='0' onChange={e => setQtdPequeno(e.target.value)} />
                     </div>
                     <div className='problema'>
-                        <label>Quantidade medio</label>
-                        <input placeholder='0' onChange={e => setQtdMedio(e.target.value)} />
+                        <label>Quantidade Medio</label>
+                        <input placeholder='0' onChange={e => setQtdMedio(e.target.value)}/>
                     </div>
                     <div className='problema'>
                         <label>Quantidade grande</label>
-                        <input placeholder='0' onChange={e => setQtdGrande(e.target.value)} />
-                    </div>
+                        <input placeholder='0' onChange={e => setQtdGrande(e.target.value)}/>
+                    </div>               
                 </div>
-                    <div>
-                        <button href='#' className='executar' onClick={total}>Executar</button>
-                    </div>
+                <div className='botao'>
+                    <button className='executar' onClick={total}>Executar</button>
+                </div>
             </div>
 
             <h3 className='resultado'>Resultado: O total é R$ {resultado.toFixed(2)}</h3>
