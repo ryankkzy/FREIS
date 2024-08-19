@@ -1,18 +1,10 @@
 import './index.scss';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
-export default function Exerci2() {
 
-    const [kilo, setValorKilo] = useState(0);
-    const [valorFinal, setValorFinal] = useState('');
-
-    function converter() {
-        let gramas = kilo * 1000
-        setValorFinal(`Resultado: O resultado é ${gramas} gramas`)
-    }
+export default function Exerci8() {
 
     return (
-        <div className='pagina-exercicio2 pagina'>
+        <div className='pagina-exercicio8 pagina'>
             <header>
                 <div className='containerAzul'>
                     <div className='imagemTitulo'>
@@ -31,22 +23,12 @@ export default function Exerci2() {
             </header>
             <div className='informacao'>
                 <Link to='/'><img src="/assets/images/voltar.png" alt="" /></Link>
-                <h2>Exercicio 02 - Converter KG/gramas</h2>
+                <h2>Exercicio 08 - Temperatura</h2>
             </div>
             <div className='faixa' />
             <div className='caixa-problema'>
-                <p>Implementar um programa em Javascript para converter kilos em gramas.</p>
+                <p>Implementar um programa em javascript para verificar se duas cores são primárias</p>
             </div>
-            <div className='campos'>
-                <div className='problema'>
-                    <label>Valor em kilos</label>
-                    <input placeholder='0' onChange={e => setValorKilo(e.target.value)} />
-                </div>
-                <div>
-                    <button href='#' className='executar' onClick={converter}>Executar</button>
-                </div>
-            </div>
-            <h3 className='resultado'>{valorFinal}</h3>
         </div>
     )
 }

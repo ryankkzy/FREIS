@@ -75,6 +75,36 @@ export default function Inicio() {
           </Link>
         </div>
 
+        <div className='cardVermelho'>
+          <Link to='/pages/exercicio06' className='link'>
+            <div className='card'>
+              <div className='retangulo vermelho' />
+              <h3 className='titulo'>Salário liquido</h3>
+              <h4 className='subtitulo'>Exercício 6</h4>
+            </div>
+          </Link>
+        </div>
+
+        <div className='cardVerdeAgua'>
+          <Link to='/pages/exercicio07' className='link'>
+            <div className='card'>
+              <div className='retangulo verdeAgua' />
+              <h3 className='titulo'>Cores primárias</h3>
+              <h4 className='subtitulo'>Exercício 7</h4>
+            </div>
+          </Link>
+        </div>
+
+        <div className='cardPreto'>
+          <Link to='/pages/exercicio08' className='link'>
+            <div className='card'>
+              <div className='retangulo preto' />
+              <h3 className='titulo'>Temperatura</h3>
+              <h4 className='subtitulo'>Exercício 8</h4>
+            </div>
+          </Link>
+        </div>
+
       </div>
     </div>
   );

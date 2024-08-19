@@ -5,12 +5,12 @@ import { useState } from 'react'
 export default function Exerci1() {
   const [valorPedido, setValorPedido] = useState(0);
   const [valorCupom, setValorCupom] = useState(0);
-  const [valorTotal , setValorTotal] = useState(0)
+  const [valorTotal , setValorTotal] = useState('')
 
 
   function calcularValorTotal() {
     let total = valorPedido - valorCupom
-    setValorTotal(total)
+    setValorTotal(`Resultado: O total é R$ ${total.toFixed(2)}`)
   }
 
     return(
@@ -52,7 +52,7 @@ export default function Exerci1() {
         <button href='#' className='executar' onClick={calcularValorTotal}>Executar</button>
       </div>        
       </div>
-      <h3 className='resultado'>Resultado: O total é R$ {valorTotal.toFixed(2)}</h3>
+      <h3 className='resultado'>{valorTotal}</h3>
     </div>
     )
 }

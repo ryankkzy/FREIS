@@ -8,19 +8,22 @@ export default function Exerci5() {
     const [nota1, setNota1] = useState(0);
     const [nota2, setNota2] = useState(0);
     const [nota3, setNota3] = useState(0);
-    const [resultado, setResultado] = useState(0)
+    const [resultado, setResultado] = useState('');
+    const [avaliado, setAvaliado] = useState('')
 
     function totalNota() {
-        let passou = true
-        let media = (nota1 + nota2 + nota3) / 3
+        let media = (Number(nota1) + Number(nota2) + Number(nota3)) / Number(3);
+        setResultado(`A média do aluno é ${media.toFixed(0)}`)
 
-        if(media < 6 ){
-            passou = false
-            return passou
+
+        let passou = true;
+        if(media < 6) {
+            passou = false;
         }
 
-        setResultado(media)
+        setAvaliado(`O aluno passou? ${passou}`)
     }
+
 
 
 
@@ -70,7 +73,8 @@ export default function Exerci5() {
                     <button className='executar' onClick={totalNota}>Executar</button>
                 </div>
             </div>
-            <h3 className='resultado'>A média do aluno é {resultado}</h3>
+            <h3 className='resultado'>{resultado}</h3>
+            <h3 className='resultado'>{avaliado}</h3>
         </div>
     )
 }

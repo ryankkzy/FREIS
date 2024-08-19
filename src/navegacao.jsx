@@ -7,6 +7,9 @@ import Exerci2 from './pages/exercicio02';
 import Exerci3 from './pages/exercicio03';
 import Exerci4 from './pages/exercicio04';
 import Exerci5 from './pages/exercicio05';
+import Exerci6 from './pages/exercicio06';
+import Exerci7 from './pages/exercicio07';
+import Exerci8 from './pages/exercicio08';
 
 export default function Navegacao() {
 
@@ -20,6 +23,9 @@ export default function Navegacao() {
                 <Route path='/pages/exercicio03' element={<Exerci3 />} />
                 <Route path='/pages/exercicio04' element={<Exerci4 />} />
                 <Route path='/pages/exercicio05' element={<Exerci5 />} />
+                <Route path='/pages/exercicio06' element={<Exerci6 />} />
+                <Route path='/pages/exercicio07' element={<Exerci7 />} />
+                <Route path='/pages/exercicio08' element={<Exerci8 />} />
 
                 <Route path='*' element={<NaoEncontrado />} />
             </Routes>

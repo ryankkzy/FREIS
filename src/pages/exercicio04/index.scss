@@ -65,6 +65,7 @@
         height: 410px;
         width: 650px;
         border-radius: 10px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
         .campo {
             display: flex;
@@ -85,7 +86,7 @@
                     border-radius: 15px;
                     padding: 10px;
                     width: 100%;
-                    text-align: center;
+                    text-align: left;
                     border: 2px solid #c3c3c3; 
                 }
             }

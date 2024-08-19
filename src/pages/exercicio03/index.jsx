@@ -7,7 +7,7 @@ export default function Exerci3() {
     const [qtdPequeno, setQtdPequeno] = useState(0)
     const [qtdMedio, setQtdMedio] = useState(0);
     const [qtdGrande, setQtdGrande] = useState(0);
-    const [resultado, setResultado] = useState(0)
+    const [resultado, setResultado] = useState('')
 
     function total() {
         let valorP = qtdPequeno * 13.5;
@@ -15,7 +15,7 @@ export default function Exerci3() {
         let valorG = qtdGrande * 17.5;
 
         let totalPagar = valorP + valorM + valorG
-        setResultado(totalPagar)
+        setResultado(`Resultado: O total a pagar é de ${totalPagar.toFixed(2)}`)
     }
 
     return (
@@ -64,7 +64,7 @@ export default function Exerci3() {
                 </div>
             </div>
 
-            <h3 className='resultado'>Resultado: O total é R$ {resultado.toFixed(2)}</h3>
+            <h3 className='resultado'>{resultado}</h3>
         </div>
     )
 }

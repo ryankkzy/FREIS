@@ -12,8 +12,12 @@ export default function Exerci4() {
     function totalLivro() {
         let valor = paginas * tempo / 3600;
 
-        setResultado(valor.toFixed(2))
+        setResultado(`Você lerá ${nomeLivro} em ${valor.toFixed(2)} horas.`)
     }
+
+
+
+
 
     return(
         <div className='pagina-exercicio4 pagina'>
@@ -57,10 +61,11 @@ export default function Exerci4() {
                     </div>               
                 </div>
                 <div className='botao'>
-                    <button className='executar' onClick={totalLivro}>Executar</button>
+                    <button className='executar' onClick={totalLivro}  >Executar</button>
                 </div>
             </div>
-            <h3 className='resultado'>Você lera em {resultado} horas</h3>
+            <h3 className='resultado'>{resultado}</h3>
+
         </div>
     )
 }
