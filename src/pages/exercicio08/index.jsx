@@ -27,7 +27,7 @@ export default function Exerci8() {
             </div>
             <div className='faixa' />
             <div className='caixa-problema'>
-                <p>Implementar um programa em javascript para verificar se duas cores são primárias</p>
+                <p>Implementar um programa em javascript que a partir da temperatura, avalie a situação da pessoa conforme a tabela. Ao final, apresente a classificação</p>
             </div>
         </div>
     )
