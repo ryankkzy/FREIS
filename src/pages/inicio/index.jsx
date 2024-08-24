@@ -105,6 +105,26 @@ export default function Inicio() {
           </Link>
         </div>
 
+        <div className='cardCinza'>
+          <Link to='/pages/exercicio09' className='link'>
+            <div className='card'>
+              <div className='retangulo cinza' />
+              <h3 className='titulo'>Sorveteria</h3>
+              <h4 className='subtitulo'>Exercício 9</h4>
+            </div>
+          </Link>
+        </div>
+
+        <div className='cardMarrom'>
+          <Link to='/pages/exercicio10' className='link'>
+            <div className='card'>
+              <div className='retangulo marrom' />
+              <h3 className='titulo'>Calculo de IMC com histórico</h3>
+              <h4 className='subtitulo'>Exercício 10</h4>
+            </div>
+          </Link>
+        </div>
+
       </div>
     </div>
   );
