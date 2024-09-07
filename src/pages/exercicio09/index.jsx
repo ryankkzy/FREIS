@@ -1,6 +1,8 @@
-import { useState } from 'react';
 import './index.scss';
-import { Link } from 'react-router-dom';
+import Cabecalho from '../../components/cabecalho';
+import Informacao from '../../components/enunciado';
+import { useState } from 'react';
+
 
 export default function Exerci9() {
 
@@ -25,30 +27,8 @@ export default function Exerci9() {
 
     return (
         <div className='pagina-exercicio9 pagina'>
-            <header>
-                <div className='containerAzul'>
-                    <div className='imagemTitulo'>
-                        <div>
-                            <img className='image' src="/assets/images/image 1.png" alt="" />
-                        </div>
-                        <div>
-                            <h1>React FreiS</h1>
-                        </div>
-                    </div>
-                    <div className='container2'>
-                        <Link to='/'>Inicio</Link>
-                        <Link to='/pages/sobre'>Sobre</Link>
-                    </div>
-                </div>
-            </header>
-            <div className='informacao'>
-                <Link to='/'><img src="/assets/images/voltar.png" alt="" /></Link>
-                <h2>Exercicio 09 - Sorveteria</h2>
-            </div>
-            <div className='faixa' />
-            <div className='caixa-problema'>
-                <p>Implementar um programa em javascript que calcule o total a se pagar em uma compra na sorveteria, a partir do total de gramas comprado. O preço de 100g é R$ 3,50 <br /> mas se o total de gramas for a partir de 1kg, o preço das 100g diminui 50 centavos.</p>
-            </div>
+            <Cabecalho />
+            <Informacao titulo="Exercício 09 - Sorveteria" enunciado="Implementar um programa em javascript que calcule o total a se pagar em uma compra na sorveteria, a partir do total de gramas comprado. O preço de 100g é R$ 3,50" enunciado2="mas se o total de gramas for a partir de 1kg, o preço das 100g diminui 50 centavos." faixa="9"/>
             <div className='containerSorvete'>
                 <div className='campo'>
                     <div className='problema'>

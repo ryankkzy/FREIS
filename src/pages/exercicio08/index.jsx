@@ -1,7 +1,8 @@
 import './index.scss';
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import Cabecalho from '../../components/cabecalho';
+import Informacao from '../../components/enunciado';
 
+import { useState } from 'react';
 
 export default function Exerci8() {
 
@@ -27,30 +28,8 @@ export default function Exerci8() {
 
     return (
         <div className='pagina-exercicio8 pagina'>
-            <header>
-                <div className='containerAzul'>
-                    <div className='imagemTitulo'>
-                        <div>
-                            <img className='image' src="/assets/images/image 1.png" alt="" />
-                        </div>
-                        <div>
-                            <h1>React FreiS</h1>
-                        </div>
-                    </div>
-                    <div className='container2'>
-                        <Link to='/'>Inicio</Link>
-                        <Link to='/pages/sobre'>Sobre</Link>
-                    </div>
-                </div>
-            </header>
-            <div className='informacao'>
-                <Link to='/'><img src="/assets/images/voltar.png" alt="" /></Link>
-                <h2>Exercicio 08 - Temperatura</h2>
-            </div>
-            <div className='faixa' />
-            <div className='caixa-problema'>
-                <p>Implementar um programa em javascript que a partir da temperatura, avalie a situação da pessoa conforme a tabela. Ao final, apresente a classificação</p>
-            </div>
+            <Cabecalho />
+            <Informacao titulo="Exercício 08 - Temperatura" enunciado="Implementar um programa em javascript que a partir da temperatura, avalie a situação da pessoa conforme a tabela. Ao final, apresente a classificação" faixa="8"/>
             <div className='temperaturas'>
                 <img src="/assets/images/image 3.png" alt="" />
             </div>

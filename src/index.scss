@@ -6,7 +6,7 @@
   font-family: "Poppins";
   text-decoration: none;
   color: #ffffff;
-  
+
   p {
     color: black
   }
@@ -18,40 +18,13 @@
   background-color: #F5F6FA;
   min-height: 1000px;
 
-  .containerAzul {
-    background-color: #6278F7;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 120px;
-    color: #ffffff;
-  }
-
-  .container2 {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    margin: 40px 100px 10px 20px;
-    text-align: center;
-    color: #ffffff;
-  }
-
-  .imagemTitulo {
-    display: flex;
-  }
-
-  .image{
-    height: 80px;
-    margin: 20px -30px 20px 100px;
-  }
-
   h1 {
     font: 550 20px 'Poppins';
     margin-top: 45px;
     margin-left: 100px;
   }
 
-  @media(min-width: 1148px){
+  @media(min-width: 1148px) {
     p {
       font-size: 10px
     }

@@ -1,6 +1,8 @@
 import './index.scss';
+import Cabecalho from '../../components/cabecalho';
+import Informacao from '../../components/enunciado';
+
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 
 export default function Exerci3() {
 
@@ -20,30 +22,8 @@ export default function Exerci3() {
 
     return (
         <div className='pagina-exercicio3 pagina'>
-            <header>
-                <div className='containerAzul'>
-                    <div className='imagemTitulo'>
-                        <div>
-                            <img className='image' src="/assets/images/image 1.png" alt="" />
-                        </div>
-                        <div>
-                            <h1>React FreiS</h1>
-                        </div>
-                    </div>
-                    <div className='container2'>
-                        <Link to='/'>Inicio</Link>
-                        <Link to='/pages/sobre'>Sobre</Link>
-                    </div>
-                </div>
-            </header>
-            <div className='informacao'>
-                <Link to='/'><img src="/assets/images/voltar.png" alt="" /></Link>
-                <h2>Exercicio 03 - Valor total por quantidade</h2>
-            </div>
-            <div className='faixa' />
-            <div className='caixa-problema'>
-                <p>Implementar um programa em Javascript para calcular o total de uma venda de açaí a partir das quantidades compradas para cada tamanho: pequeno, médio e grande, <br />sabendo que o valor do açaí é R$ 13,50; R$ 15,00 e R$ 17,50 respectivamente</p>
-            </div>
+            <Cabecalho />
+            <Informacao titulo="Exercício 03 - Valor total por quantidade" enunciado="Implementar um programa em Javascript para calcular o total de uma venda de açaí a partir das quantidades compradas para cada tamanho: pequeno, médio e grande," enunciado2="sabendo que o valor do açaí é R$ 13,50; R$ 15,00 e R$ 17,50 respectivamente." faixa="3"/>
             <div className='containerConta'>
                 <div className='campo'>
                     <div className='problema'>
@@ -52,12 +32,12 @@ export default function Exerci3() {
                     </div>
                     <div className='problema'>
                         <label>Quantidade Medio</label>
-                        <input placeholder='0' onChange={e => setQtdMedio(e.target.value)}/>
+                        <input placeholder='0' onChange={e => setQtdMedio(e.target.value)} />
                     </div>
                     <div className='problema'>
                         <label>Quantidade grande</label>
-                        <input placeholder='0' onChange={e => setQtdGrande(e.target.value)}/>
-                    </div>               
+                        <input placeholder='0' onChange={e => setQtdGrande(e.target.value)} />
+                    </div>
                 </div>
                 <div className='botao'>
                     <button className='executar' onClick={total}>Executar</button>

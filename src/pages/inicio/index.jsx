@@ -1,30 +1,16 @@
 import './index.scss';
-import { Link } from 'react-router-dom'
+import Cabecalho from '../../components/cabecalho';
+
+import { Link } from 'react-router-dom';
 
 export default function Inicio() {
 
 
   return (
     <div className='pagina-inicio pagina'>
-      <header>
-        <div className='containerAzul'>
-          <div className='imagemTitulo'>
-            <div>
-              <img className='image' src="/assets/images/image 1.png" alt="" />
-            </div>
-            <div>
-              <h1>React FreiS</h1>
-            </div>
-          </div>
-          <div className='container2'>
-            <Link to='/'>Inicio</Link>
-            <Link to='/pages/sobre'>Sobre</Link>
-          </div>
-        </div>
-      </header>
+      <Cabecalho />
       <h1>Escolha um treino...</h1>
       <div className='containerPrincipal'>
-
         <div className='cardL'>
           <Link to='/pages/exercicio01' className='link'>
             <div className='card'>
@@ -44,7 +30,7 @@ export default function Inicio() {
             </div>
           </Link>
         </div>
-        
+
         <div className='cardCiano'>
           <Link to='/pages/exercicio03' className='link'>
             <div className='card'>

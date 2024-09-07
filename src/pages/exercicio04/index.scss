@@ -12,52 +12,8 @@
         color: black;
     }
 
-    .informacao {
-        margin: 50px 0px 10px 100px;
-        display: flex;
-        gap: 20px;
-    }
 
-
-
-    .caixa-problema {
-        text-align: center;
-        background-color: #ffffff;
-        margin: 30px 100px 10px;
-        border-radius: 5px;
-        height: 250px;
-        display: flex;
-        justify-content: center;
-
-        p {
-            margin-top: 100px;
-            font-size: 18px
-        }
-    }
-    
-    .faixa {
-        background-color: #37B7FF;
-        height: 4px;
-        margin: 15px 100px 0px 100px;
-    }
-
-    .caixa-problema {
-        text-align: center;
-        background-color: #ffffff;
-        margin: 30px 100px 10px;
-        border-radius: 5px;
-        height: 250px;
-        display: flex;
-        justify-content: center;
-
-        p {
-            margin-top: 100px;
-            font-size: 18px
-        }
-    }
-
-
-    .containerLivro{
+    .containerLivro {
         display: flex;
         flex-direction: column;
         background-color: #ffffff;
@@ -87,7 +43,7 @@
                     padding: 10px;
                     width: 100%;
                     text-align: left;
-                    border: 2px solid #c3c3c3; 
+                    border: 2px solid #c3c3c3;
                 }
             }
         }
@@ -99,7 +55,7 @@
             margin-top: 50px;
 
             .executar {
-                background-color:#6278F7;
+                background-color: #6278F7;
                 padding: 15px;
                 border-radius: 10px;
                 width: 200px;
@@ -119,4 +75,3 @@
 
 
 }
-

@@ -1,6 +1,10 @@
 import './index.scss';
-import { Link } from 'react-router-dom';
+import Cabecalho from '../../components/cabecalho';
+import Informacao from '../../components/enunciado';
+
 import { useState } from 'react';
+
+
 export default function Exerci2() {
 
     const [kilo, setValorKilo] = useState(0);
@@ -13,30 +17,8 @@ export default function Exerci2() {
 
     return (
         <div className='pagina-exercicio2 pagina'>
-            <header>
-                <div className='containerAzul'>
-                    <div className='imagemTitulo'>
-                        <div>
-                            <img className='image' src="/assets/images/image 1.png" alt="" />
-                        </div>
-                        <div>
-                            <h1>React FreiS</h1>
-                        </div>
-                    </div>
-                    <div className='container2'>
-                        <Link to='/'>Inicio</Link>
-                        <Link to='/pages/sobre'>Sobre</Link>
-                    </div>
-                </div>
-            </header>
-            <div className='informacao'>
-                <Link to='/'><img src="/assets/images/voltar.png" alt="" /></Link>
-                <h2>Exercicio 02 - Converter KG/gramas</h2>
-            </div>
-            <div className='faixa' />
-            <div className='caixa-problema'>
-                <p>Implementar um programa em Javascript para converter kilos em gramas.</p>
-            </div>
+            <Cabecalho />
+            <Informacao titulo="Exercício 02 - Converter Kg/gramas" enunciado="Implementar um programa em Javascript para converter kilos em gramas." faixa="2"/>
             <div className='campos'>
                 <div className='problema'>
                     <label>Valor em kilos</label>

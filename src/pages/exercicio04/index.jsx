@@ -1,9 +1,12 @@
 import './index.scss';
-import { Link } from 'react-router-dom';
+import Informacao from '../../components/enunciado'
+import Cabecalho from '../../components/cabecalho';
+
 import { useState } from 'react';
 
+
 export default function Exerci4() {
-    
+
     const [nomeLivro, setNomeLivro] = useState('')
     const [paginas, setPaginas] = useState(0);
     const [tempo, setTempo] = useState(0);
@@ -16,49 +19,24 @@ export default function Exerci4() {
     }
 
 
-
-
-
-    return(
+    return (
         <div className='pagina-exercicio4 pagina'>
-             <header>
-                <div className='containerAzul'>
-                    <div className='imagemTitulo'>
-                        <div>
-                            <img className='image' src="/assets/images/image 1.png" alt="" />
-                        </div>
-                        <div>
-                            <h1>React FreiS</h1>
-                        </div>
-                    </div>
-                    <div className='container2'>
-                        <Link to='/'>Inicio</Link>
-                        <Link to='/pages/sobre'>Sobre</Link>
-                    </div>
-                </div>
-            </header>
-            <div className='informacao'>
-                <Link to='/'><img src="/assets/images/voltar.png" alt="" /></Link>
-                <h2>Exercicio 04 - Leitura de livro</h2>
-            </div>
-            <div className='faixa'/>
-            <div className='caixa-problema'>
-                <p>Implementar um programa em Javascript que calcule o tempo que um livro será lido por uma pessoa a partir do nome do livro, do total de páginas e do tempo em <br />  segundos de leitura por página</p>
-            </div>
+            <Cabecalho />
+            <Informacao titulo="Exercício 04 - Leitura de livro" enunciado="Implementar um programa em Javascript que calcule o tempo que um livro será lido por uma pessoa a partir do nome do livro, do total de páginas e do tempo em" enunciado2="segundos de leitura por página." faixa="4"/>
             <div className='containerLivro'>
                 <div className='campo'>
                     <div className='problema'>
                         <label>Nome do livro</label>
-                        <input placeholder='' onChange={e => setNomeLivro(e.target.value)} />
+                        <input placeholder='Digite a mensagem.' onChange={e => setNomeLivro(e.target.value)} />
                     </div>
                     <div className='problema'>
                         <label>Total de páginas</label>
-                        <input placeholder='' onChange={e => setPaginas(e.target.value)}/>
+                        <input placeholder='0' onChange={e => setPaginas(e.target.value)} />
                     </div>
                     <div className='problema'>
                         <label>Tempo em segundos de leitura</label>
-                        <input placeholder='' onChange={e => setTempo(e.target.value)}/>
-                    </div>               
+                        <input placeholder='0' onChange={e => setTempo(e.target.value)} />
+                    </div>
                 </div>
                 <div className='botao'>
                     <button className='executar' onClick={totalLivro}  >Executar</button>
