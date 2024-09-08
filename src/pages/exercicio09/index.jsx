@@ -22,7 +22,7 @@ export default function Exerci9() {
             exibicao = 'Peso inválido!';
         }
 
-        setResultado(exibicao)
+        setResultado(exibicao);
     }
 
     return (

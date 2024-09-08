@@ -1,5 +1,5 @@
 .pagina-exercicio10 {
-    h2 {
+    h2, h4 {
         color: #000000;
     }
 
@@ -11,5 +11,104 @@
         color: black;
     }
 
+
+    .containerIMC {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        margin-top: 20px;
+
+        .entrada {
+            display: flex;
+            flex-direction: column;
+            background-color: #ffffff;
+            height: 220px;
+            margin-left: 100px;
+            width: 570px;
+            border-radius: 15px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+        }
+
+        .campo {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 0px 50px 10px;
+
+            .problema {
+                display: flex;
+                flex-direction: column;
+                margin-top: 30px;
+
+                label {
+                    font: 600 19px 'Poppins';
+                }
+
+                input {
+                    border-radius: 15px;
+                    padding: 10px;
+                    width: 100%;
+                    text-align: left;
+                    border: 2px solid #c3c3c3;
+                    margin-top: 10px;
+                }
+            }
+        }
+
+        .botao {
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            margin-top: 30px;
+
+            .executar {
+                background-color: #6278F7;
+                padding: 15px;
+                border-radius: 10px;
+                width: 200px;
+                color: #fff;
+                border: 0px;
+                margin-right: 50px;
+            }
+        }
+
+        .situacao{
+            display: flex;
+            flex-direction: column;
+            max-height: 50px;
+            margin-top: 10px;
+            gap: 50px;
+
+            .alinhamento{
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+
+            }
+
+            .informacoes{
+                display: flex;
+                flex-direction: row;
+                gap: 15px;
+                padding: 12px;
+                margin-left: 10px;
+                background-color: #fff;
+                border-radius: 13px;
+                width: 1030px;
+
+                h4{
+                    margin-left: 10px;
+                }
+            }
+
+            .icone img{
+                padding: 8px;
+                color: #000000;
+                background-color: #6278F7;
+                border-radius: 10px;
+            }
+        }
+    }
 
 }

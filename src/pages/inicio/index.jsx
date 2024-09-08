@@ -1,116 +1,24 @@
 import './index.scss';
 import Cabecalho from '../../components/cabecalho';
-
-import { Link } from 'react-router-dom';
+import Card from '../../components/card';
 
 export default function Inicio() {
-
 
   return (
     <div className='pagina-inicio pagina'>
       <Cabecalho />
       <h1>Escolha um treino...</h1>
       <div className='containerPrincipal'>
-        <div className='cardL'>
-          <Link to='/pages/exercicio01' className='link'>
-            <div className='card'>
-              <div className='retangulo laranja' />
-              <h3 className='titulo'>Cupom de desconto</h3>
-              <h4 className='subtitulo'>Exercício 1</h4>
-            </div>
-          </Link>
-        </div>
-
-        <div className='cardV'>
-          <Link to='/pages/exercicio02' className='link'>
-            <div className='card'>
-              <div className='retangulo verde' />
-              <h3 className='titulo'>Converter KG/gramas</h3>
-              <h4 className='subtitulo'>Exercício 2</h4>
-            </div>
-          </Link>
-        </div>
-
-        <div className='cardCiano'>
-          <Link to='/pages/exercicio03' className='link'>
-            <div className='card'>
-              <div className='retangulo ciano' />
-              <h3 className='titulo'>Valor total por quantidade</h3>
-              <h4 className='subtitulo'>Exercício 3</h4>
-            </div>
-          </Link>
-        </div>
-
-        <div className='cardAzul'>
-          <Link to='/pages/exercicio04' className='link'>
-            <div className='card'>
-              <div className='retangulo azul' />
-              <h3 className='titulo'>Leitura de livro</h3>
-              <h4 className='subtitulo'>Exercício 4</h4>
-            </div>
-          </Link>
-        </div>
-
-        <div className='cardRoxo'>
-          <Link to='/pages/exercicio05' className='link'>
-            <div className='card'>
-              <div className='retangulo roxo' />
-              <h3 className='titulo'>Média de notas</h3>
-              <h4 className='subtitulo'>Exercício 5</h4>
-            </div>
-          </Link>
-        </div>
-
-        <div className='cardVermelho'>
-          <Link to='/pages/exercicio06' className='link'>
-            <div className='card'>
-              <div className='retangulo vermelho' />
-              <h3 className='titulo'>Salário liquido</h3>
-              <h4 className='subtitulo'>Exercício 6</h4>
-            </div>
-          </Link>
-        </div>
-
-        <div className='cardVerdeAgua'>
-          <Link to='/pages/exercicio07' className='link'>
-            <div className='card'>
-              <div className='retangulo verdeAgua' />
-              <h3 className='titulo'>Cores primárias</h3>
-              <h4 className='subtitulo'>Exercício 7</h4>
-            </div>
-          </Link>
-        </div>
-
-        <div className='cardPreto'>
-          <Link to='/pages/exercicio08' className='link'>
-            <div className='card'>
-              <div className='retangulo preto' />
-              <h3 className='titulo'>Temperatura</h3>
-              <h4 className='subtitulo'>Exercício 8</h4>
-            </div>
-          </Link>
-        </div>
-
-        <div className='cardCinza'>
-          <Link to='/pages/exercicio09' className='link'>
-            <div className='card'>
-              <div className='retangulo cinza' />
-              <h3 className='titulo'>Sorveteria</h3>
-              <h4 className='subtitulo'>Exercício 9</h4>
-            </div>
-          </Link>
-        </div>
-
-        <div className='cardMarrom'>
-          <Link to='/pages/exercicio10' className='link'>
-            <div className='card'>
-              <div className='retangulo marrom' />
-              <h3 className='titulo'>Calculo de IMC com histórico</h3>
-              <h4 className='subtitulo'>Exercício 10</h4>
-            </div>
-          </Link>
-        </div>
-
+        <Card card="1" titulo="Cupom de desconto" subtitulo="Exercicio 1" caminho="1" />
+        <Card card="2" titulo="Converter Kg/gramas" subtitulo="Exercicio 2" caminho="2" />
+        <Card card="3" titulo="Valor total por quantidade" subtitulo="Exercicio 3" caminho="3" />
+        <Card card="4" titulo="Leitura de livro" subtitulo="Exercicio 4" caminho="4" />
+        <Card card="5" titulo="Média de notas" subtitulo="Exercicio 5" caminho="5" />
+        <Card card="6" titulo="Salário líquido" subtitulo="Exercicio 6" caminho="6" />
+        <Card card="7" titulo="Cores primárias" subtitulo="Exercicio 7" caminho="7" />
+        <Card card="8" titulo="Temperatura" subtitulo="Exercicio 8" caminho="8" />
+        <Card card="9" titulo="Sorveteria" subtitulo="Exercicio 9" caminho="9" />
+        <Card card="10" titulo="Calculo de IMC com histórico" subtitulo="Exercicio 10" caminho="10" />
       </div>
     </div>
   );

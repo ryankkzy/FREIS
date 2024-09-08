@@ -32,7 +32,7 @@ export default function Exerci07() {
     return (
         <div className='pagina-exercicio7 pagina'>
             <Cabecalho />
-            <Informacao titulo="Exercício 07 - Cores primárias" enunciado="Implementar um programa em javascript para verificar se duas cores são primárias" faixa="7"/>
+            <Informacao titulo="Exercício 07 - Cores primárias" enunciado="Implementar um programa em javascript para verificar se duas cores são primárias" faixa="7" />
             <div className='containerCor'>
                 <div className='campo'>
                     <div className='problema'>
