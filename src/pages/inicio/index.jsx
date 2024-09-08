@@ -19,6 +19,7 @@ export default function Inicio() {
         <Card card="8" titulo="Temperatura" subtitulo="Exercicio 8" caminho="8" />
         <Card card="9" titulo="Sorveteria" subtitulo="Exercicio 9" caminho="9" />
         <Card card="10" titulo="Calculo de IMC com histórico" subtitulo="Exercicio 10" caminho="10" />
+        <Card card="11" titulo="Tabuada" subtitulo="Exercicio 11" caminho="11" />
       </div>
     </div>
   );

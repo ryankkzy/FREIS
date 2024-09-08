@@ -1,5 +1,7 @@
-.pagina-exercicio9 {
-    h2 {
+.pagina-exercicio11 {
+
+    h2,
+    h4 {
         color: #000000;
     }
 
@@ -11,6 +13,7 @@
         color: black;
     }
 
+
     .a {
         display: flex;
         justify-content: center;
@@ -18,15 +21,16 @@
         margin-top: 20px;
     }
 
-    .containerSorvete {
+    .containerTabuada {
+
         display: flex;
         flex-direction: column;
         background-color: #ffffff;
-        margin: 10px 34% 30px;
         height: 220px;
         width: 570px;
         border-radius: 15px;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
 
         .campo {
             display: flex;
@@ -67,14 +71,17 @@
                 width: 200px;
                 color: #fff;
                 border: 0px;
-                margin-right: 50px;
             }
         }
-    }
-    
-    .resultado {
-        text-align: center;
-        margin-top: 0px;
-        color: #000000;
+
+        .tabuada {
+            margin-top: 20px;
+
+            h4 {
+                color: #000000;
+                text-align: end;
+            }
+        }
+
     }
 }

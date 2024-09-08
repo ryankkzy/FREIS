@@ -55,6 +55,11 @@ export default function Exerci10() {
         setAltura('')
         setPeso('')
     }
+
+    function apagarImc(pos){
+        listaSituacao.splice(pos, 1)
+        setListaSituacao([...listaSituacao])
+    }
   
 
     return (
@@ -79,13 +84,13 @@ export default function Exerci10() {
                 </div>
 
                 <div className='situacao'>
-                    {listaSituacao.map(item =>
+                    {listaSituacao.map((item, pos )=>
                         <div className='alinhamento'>
                             <div className='informacoes'>
                                 <h4>{item.altura}</h4> <h4>{item.peso}</h4> <h4>{item.situacao}</h4>
                             </div>
                             <div className='icone'>
-                                <img src="../assets/images/lixo.png" alt="" />
+                                <img src="../assets/images/lixo.png" alt="" onClick={() => apagarImc(pos)} />
                             </div>
                         </div>
 

@@ -35,6 +35,9 @@ export default function Informacao(props) {
         else if(props.faixa === "10"){
             return '10'
         }
+        else if(props.faixa === "11"){
+            return '11'
+        }
     }
 
     return (
@@ -43,7 +46,7 @@ export default function Informacao(props) {
                 <Link to='/'><img src="/assets/images/voltar.png" alt="" /></Link>
                 <h2> {props.titulo} </h2>
             </div>
-            <div className={'faixa' + identificarCor()}> {props.faixa} </div>
+            <div className={'faixa' + identificarCor()}></div>
             <div className='caixa-problema'>
                 <p> {props.enunciado} <br /> {props.enunciado2} </p>
             </div>

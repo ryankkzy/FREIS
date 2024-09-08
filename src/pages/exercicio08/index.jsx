@@ -29,21 +29,24 @@ export default function Exerci8() {
     return (
         <div className='pagina-exercicio8 pagina'>
             <Cabecalho />
-            <Informacao titulo="Exercício 08 - Temperatura" enunciado="Implementar um programa em javascript que a partir da temperatura, avalie a situação da pessoa conforme a tabela. Ao final, apresente a classificação" faixa="8"/>
+            <Informacao titulo="Exercício 08 - Temperatura" enunciado="Implementar um programa em javascript que a partir da temperatura, avalie a situação da pessoa conforme a tabela. Ao final, apresente a classificação" faixa="8" />
             <div className='temperaturas'>
                 <img src="/assets/images/image 3.png" alt="" />
             </div>
-            <div className='containerTemp'>
-                <div className='campo'>
-                    <div className='problema'>
-                        <label>Temperatura</label>
-                        <input placeholder='0' onChange={e => setTemp(e.target.value)} />
+            <div className='a'>
+                <div className='containerTemp'>
+                    <div className='campo'>
+                        <div className='problema'>
+                            <label>Temperatura</label>
+                            <input placeholder='0' onChange={e => setTemp(e.target.value)} />
+                        </div>
+                    </div>
+                    <div className='botao'>
+                        <button className='executar' onClick={medirTemperatura}>Executar</button>
                     </div>
                 </div>
-                <div className='botao'>
-                    <button className='executar' onClick={medirTemperatura}>Executar</button>
-                </div>
             </div>
+
             <h3 className='resultado'>{result}</h3>
         </div>
     )

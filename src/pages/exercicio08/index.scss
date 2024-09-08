@@ -17,6 +17,14 @@
         text-align: center;
     }
 
+
+    .a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    
     .containerTemp {
         display: flex;
         flex-direction: column;

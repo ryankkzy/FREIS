@@ -34,6 +34,9 @@ export default function Card(props) {
         else if (props.card === "10") {
             return 'cardMarrom'
         }
+        else if(props.card === "11"){
+            return 'cardRox'
+        }
     }
 
 
@@ -67,6 +70,9 @@ export default function Card(props) {
         }
         else if (props.caminho === "10") {
             return '/pages/exercicio10'
+        }
+        else if (props.caminho === "11") {
+            return '/pages/exercicio11'
         }
     }
 
